@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
+import Map from "./map/index.js"
+const App =()=>{
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Map/>
+     <List/>
+     <Images/>
     </div>
   );
+}
+
+const List=()=>{
+  return (
+    <ul className="Listname">
+      <li>List 01</li>
+      <li>List 02</li>
+      <li>List 03</li>
+      <li>List 04</li>
+    </ul>
+  )
+}
+
+const Images=()=>{
+  return(
+    <div>
+      <p>
+        Lorem ipsum dolar sit amet?
+      </p>
+      <button>Send</button>
+    </div>
+
+  )
 }
 
 export default App;
