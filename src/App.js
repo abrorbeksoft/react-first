@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './modules/navbar'
 import './index'
 import Co from './modules/content'
+import User from './modules/room';
 
 const App =()=>{
    return (
@@ -20,9 +21,9 @@ const App =()=>{
                 <li><a href="#">Settings</a></li>
             </ul>
         </div>
-      <div className="col-md-9">
+      <div className="col-md-9">  
         <Co/>
-        
+        <User/>
       </div>
       </div>
       </div>
