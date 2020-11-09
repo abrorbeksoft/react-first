@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './modules/navbar'
+import Navbar from './modules/navbar/navbar'
 import './index'
-import Co from './modules/content'
-import User from './modules/room';
+import Co from './modules/content/content'
+import User from './modules/room/room';
+import Messages from './modules/messages/messages';
 
 const App =()=>{
    return (
@@ -26,6 +27,7 @@ const App =()=>{
         <User/>
       </div>
       </div>
+      <Messages/>
       </div>
     </div>
   );
